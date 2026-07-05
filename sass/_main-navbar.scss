@@ -1,0 +1,24 @@
+#mainNavbarList {
+	.nav-link {
+		position: relative;
+        padding-right:  1.5rem;
+        padding-left: 1.5rem;
+
+		&.active,
+		&[aria-current="page"] {
+			color: $primary;
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0.75rem;
+				right: 0.75rem;
+				bottom: -0.6rem;
+				height: 0.22rem;
+				background-color: $primary;
+				border-radius: 999px;
+				z-index: 2;
+			}
+		}
+	}
+}

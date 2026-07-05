@@ -1,0 +1,151 @@
+body {
+	position: relative;
+	min-height: 100vh;
+	overflow-x: hidden;
+	background-color: #fff;
+	background-image: linear-gradient(180deg, #fff 0%, #fff 100%);
+}
+
+html::before,
+body::before,
+body::after {
+	content: "";
+	position: fixed;
+	left: 50%;
+	top: 0;
+	width: 320vmax;
+	height: 320vmax;
+	pointer-events: none;
+	transform: translate(-50%, -80%);
+	background: rgba($wave-peach, 1);
+	border-radius: 44%;
+	animation: summer-wave-rotate 25s linear infinite;
+	z-index: 0;
+	will-change: transform;
+}
+
+html::before {
+	width: 340vmax;
+	height: 340vmax;
+	transform: translate(-50%, -78%);
+	background: rgba($wave-peach, 0.62);
+	border-radius: 46%;
+	animation-name: summer-wave-rotate-third;
+	animation-duration: 20s;
+	z-index: 1;
+}
+
+body::after {
+	width: 300vmax;
+	height: 300vmax;
+	transform: translate(-50%, -76%);
+	background: rgba($wave-peach, 0.44);
+	border-radius: 41%;
+	animation-name: summer-wave-rotate-after;
+	animation-duration: 15s;
+	animation-direction: reverse;
+}
+
+main {
+	position: relative;
+	z-index: 2;
+}
+
+header {
+	position: relative;
+	z-index: 1035;
+}
+
+.navbar.fixed-top {
+	z-index: 1035;
+}
+
+header,
+#mainNavbar,
+.navbar-toggler,
+.navbar-nav,
+.navbar-nav .nav-link {
+	position: relative;
+	z-index: 2000;
+	pointer-events: auto;
+}
+
+#showcaseSubmenu {
+	z-index: 1020;
+}
+
+@keyframes summer-wave-rotate {
+	0% {
+		transform: translate(-50%, -80%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -80%) rotate(360deg);
+	}
+}
+
+@keyframes summer-wave-rotate-after {
+	0% {
+		transform: translate(-50%, -76%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -76%) rotate(360deg);
+	}
+}
+
+@keyframes summer-wave-rotate-third {
+	0% {
+		transform: translate(-50%, -78%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -78%) rotate(360deg);
+	}
+}
+
+@media (min-width: 2000px) {
+	html::before {
+		animation-name: summer-wave-rotate-ultrawide-third;
+	}
+
+	body::before {
+		animation-name: summer-wave-rotate-ultrawide;
+	}
+
+	body::after {
+		animation-name: summer-wave-rotate-ultrawide-after;
+	}
+
+	@keyframes summer-wave-rotate-ultrawide {
+		0% {
+			transform: translate(-50%, -90%) rotate(0deg);
+		}
+		100% {
+			transform: translate(-50%, -90%) rotate(360deg);
+		}
+	}
+
+	@keyframes summer-wave-rotate-ultrawide-after {
+		0% {
+			transform: translate(-50%, -88%) rotate(0deg);
+		}
+		100% {
+			transform: translate(-50%, -88%) rotate(360deg);
+		}
+	}
+
+	@keyframes summer-wave-rotate-ultrawide-third {
+		0% {
+			transform: translate(-50%, -87%) rotate(0deg);
+		}
+		100% {
+			transform: translate(-50%, -87%) rotate(360deg);
+		}
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html::before,
+	body::before,
+	body::after {
+		animation: none;
+	}
+}

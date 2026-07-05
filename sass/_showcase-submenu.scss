@@ -1,0 +1,19 @@
+.showcase-submenu {
+	left: 50%;
+	bottom: 1rem;
+	transform: translateX(-50%);
+	z-index: 1020;
+}
+
+.showcase-submenu{
+	.nav-link {
+
+		&.active{
+			color: $primary;
+			font-weight: 700;
+			background-color: lighten($wave-peach, 10%);
+
+		
+		}
+	}
+}

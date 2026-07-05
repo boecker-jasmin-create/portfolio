@@ -1,0 +1,134 @@
+.showcase-stage {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	margin-left: 0;
+	overflow: hidden;
+}
+
+.showcase-panel {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 1rem;
+	transform: translateX(100%);
+	transition: transform 0.55s ease;
+}
+
+.showcase-panel-content {
+	display: flex;
+	flex-direction: column;
+	width: min(1100px, 100%);
+	max-height: calc(100vh - 10.5rem);
+}
+
+.showcase-panel-intro {
+	max-width: 68ch;
+}
+
+.showcase-panel-list {
+	overflow: hidden;
+	padding-right: 0.35rem;
+}
+
+.showcase-item-card {
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+	&:hover,
+	&:focus-visible {
+		transform: scale(0.9);
+	}
+}
+
+.showcase-item-image {
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
+
+#showcaseDetailModal {
+	--showcase-modal-top-offset: 5rem;
+	--showcase-modal-bottom-offset: 6rem;
+
+	.modal-dialog {
+		margin-top: var(--showcase-modal-top-offset);
+		margin-bottom: var(--showcase-modal-bottom-offset);
+		max-height: calc(100vh - var(--showcase-modal-top-offset) - var(--showcase-modal-bottom-offset));
+		max-height: calc(100dvh - var(--showcase-modal-top-offset) - var(--showcase-modal-bottom-offset));
+	}
+
+	.modal-content {
+		max-height: inherit;
+	}
+
+	.modal-body {
+		overflow-y: auto;
+	}
+
+	.showcase-detail-grid {
+		display: grid;
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+		gap: 1rem;
+	}
+
+	.showcase-detail-block {
+		padding: 0.75rem;
+		background-color: var(--bs-body-bg);
+		grid-column: span 12;
+
+		h5 {
+			font-size: 1rem;
+		}
+	}
+
+	.showcase-detail-cell--wide {
+		grid-column: span 6;
+	}
+
+	.showcase-detail-cell--compact {
+		grid-column: span 4;
+	}
+
+	.showcase-detail-cell--third {
+		grid-column: span 4;
+
+		@media (max-width: 991.98px) {
+			grid-column: span 6;
+		}
+
+		@media (max-width: 575.98px) {
+			grid-column: span 12;
+		}
+	}
+
+	.showcase-detail-cell--full {
+		grid-column: span 12;
+	}
+
+	@media (max-width: 991.98px) {
+		.showcase-detail-cell--compact,
+		.showcase-detail-cell--wide {
+			grid-column: span 12;
+		}
+	}
+
+	.showcase-detail-block iframe {
+		border: 0;
+	}
+}
+
+.showcase-panel.is-active {
+	transform: translateX(0);
+	z-index: 2;
+}
+
+.showcase-panel.is-prev {
+	transform: translateX(-100%);
+	z-index: 1;
+}
+
+.showcase-panel.is-next {
+	transform: translateX(100%);
+	z-index: 1;
+}
