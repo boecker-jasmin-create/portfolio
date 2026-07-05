@@ -1,11 +1,14 @@
 const navbar = document.querySelector('#mainNavbar');
 const mainNavbarList = document.querySelector('#mainNavbarList');
 const navLinks = mainNavbarList ? mainNavbarList.querySelectorAll('.nav-link[href^="#"]') : [];
+const showcaseSubmenuLinks = document.querySelectorAll('#showcaseSubmenu .nav-link[href^="#"]');
+const allPageLinks = document.querySelectorAll('a[href^="#"]');
+const allNavLinks = Array.from(navLinks).concat(Array.from(showcaseSubmenuLinks));
 const sections = Array.from(document.querySelectorAll('main > section[id]'));
 const navOffset = 120;
 
 const setActiveLink = (targetId) => {
-	navLinks.forEach((link) => {
+	allNavLinks.forEach((link) => {
 		const isActive = link.getAttribute('href') === `#${targetId}`;
 		link.classList.toggle('active', isActive);
 		if (isActive) {
@@ -38,10 +41,15 @@ if (window.bootstrap && navbar) {
 	collapseInstance = bootstrap.Collapse.getOrCreateInstance(navbar, { toggle: false });
 }
 
-navLinks.forEach((link) => {
+allPageLinks.forEach((link) => {
 	link.addEventListener('click', (event) => {
 		const href = link.getAttribute('href');
 		if (!href || !href.startsWith('#')) {
+			return;
+		}
+
+		// Ignoriere Submenu-Links (sie haben ihre eigene Logik)
+		if (link.hasAttribute('data-showcase-panel')) {
 			return;
 		}
 
@@ -57,7 +65,7 @@ navLinks.forEach((link) => {
 	});
 });
 
-if (sections.length > 0 && navLinks.length > 0) {
+if (sections.length > 0 && allNavLinks.length > 0) {
 	const observer = new IntersectionObserver(
 		(entries) => {
 			const visible = entries
@@ -86,8 +94,6 @@ const revealSelector = [
 	'p',
 	'.btn',
 	'.showcase-stage',
-	'.contact-step',
-	'.contact-result',
 	'form'
 ].join(', ');
 
