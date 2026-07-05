@@ -348,6 +348,7 @@ showcaseTabs.forEach((tab) => {
 		}
 
 		event.preventDefault();
+		event.stopPropagation();
 		switchShowcasePanel(nextPanelId);
 	});
 });
