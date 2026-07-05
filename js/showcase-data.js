@@ -7,7 +7,7 @@ const createPreviewSvg = (title, accent = '#408266') => {
 window.showcaseData = {
 	'showcase-html5-panel': {
 		title: 'HTML5 Banner',
-		intro: 'HTML5 Banner mit flüssigen animationen und guter Performence. (Bitte Ad-Blocker deaktivieren!)',
+		intro: 'HTML5 Banner mit flüssigen animationen und guter Performence.',
 		
 		items: [
 			{
@@ -19,7 +19,7 @@ window.showcaseData = {
 						title: 'Billboard 970x250',
 						height: 250,
                         width: 970,
-						src: './showcase/ptp-251202/billboard/index.html'
+						src: 'showcase/ptp-251202/billboard/index.html'
 					},
 					{
 						type: 'iframe',
@@ -270,37 +270,7 @@ window.showcaseData = {
 							href: 'https://aktion.wochenblatt.com/lpV4/themes/plus-paket-upgrade_0626/'
 						}
 					]
-				},
-			/*{
-				title: 'Hero Animation – Parallax Layer',
-				teaser: 'Animation-Vorschau plus Editor-Code in einer Detailansicht.',
-				thumbnail: createPreviewSvg('JS Animation', '#2a3f6e'),
-				detailBlocks: [
-					{
-						type: 'video',
-						title: 'Animation Vorschau',
-						src: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4'
-					},
-					{
-						type: 'code',
-						title: 'Editor (JavaScript)',
-						language: 'javascript',
-						content: "const layers = document.querySelectorAll('[data-parallax]');\nwindow.addEventListener('mousemove', (event) => {\n  const x = (event.clientX / window.innerWidth - 0.5) * 12;\n  const y = (event.clientY / window.innerHeight - 0.5) * 12;\n  layers.forEach((layer, index) => {\n    const depth = (index + 1) * 0.6;\n    layer.style.transform = `translate(${x * depth}px, ${y * depth}px)`;\n  });\n});"
-					}
-				]
-			},
-			{
-				title: 'Card Micro Interaction',
-				teaser: 'Hover- und Fokusanimation mit guter Accessibility-Basis.',
-				thumbnail: createPreviewSvg('Micro Interaction', '#375785'),
-				detailBlocks: [
-					{
-						type: 'text',
-						title: 'Projektinfo',
-						content: 'Diese Karte ist als Platzhalter gedacht. Du kannst Vorschau und Editor-Code direkt in der Daten-Datei ergänzen.'
-					}
-				]
-			}*/
+				}
 		]
 	}
 };
