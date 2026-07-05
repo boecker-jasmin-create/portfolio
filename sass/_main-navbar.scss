@@ -1,8 +1,8 @@
 #mainNavbarList {
 	.nav-link {
 		position: relative;
-        padding-right:  1.5rem;
-        padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		padding-left: 1.5rem;
 
 		&.active,
 		&[aria-current="page"] {
@@ -20,5 +20,40 @@
 				z-index: 2;
 			}
 		}
+	}
+
+	@media (max-width: 991.98px) {
+		.nav-link {
+			padding-right: 1rem;
+			padding-left: 1rem;
+			margin-bottom: 0.25rem;
+			border-radius: 0.5rem;
+
+			&.active,
+			&[aria-current="page"] {
+				background-color: $primary;
+				color: white;
+
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.navbar-toggler {
+	margin-right: auto;
+
+	@media (max-width: 991.98px) {
+		margin-right: 1.5rem;
+	}
+
+	&[aria-expanded="false"] .navbar-toggler-icon {
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(64,130,102,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	}
+
+	&[aria-expanded="true"] .navbar-toggler-icon {
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(64,130,102,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M7 7l16 16M23 7L7 23'/%3e%3c/svg%3e");
 	}
 }
