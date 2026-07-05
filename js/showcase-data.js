@@ -19,7 +19,7 @@ window.showcaseData = {
 						title: 'Billboard 970x250',
 						height: 250,
                         width: 970,
-						src: 'showcase/ptp-251202/billboard/index.html'
+						src: './showcase/ptp-251202/billboard/index.html'
 					},
 					{
 						type: 'iframe',
