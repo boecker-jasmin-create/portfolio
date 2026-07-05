@@ -7,7 +7,7 @@ const createPreviewSvg = (title, accent = '#408266') => {
 window.showcaseData = {
 	'showcase-html5-panel': {
 		title: 'HTML5 Banner',
-		intro: 'HTML5 Banner mit flüssigen animationen und guter Performence. (Bitte Ad-Blocker deaktivieren!)',
+		intro: 'HTML5 Banner mit flüssigen animationen und guter Performence. <br>(Bitte Ad-Blocker deaktivieren!)',
 		
 		items: [
 			{
