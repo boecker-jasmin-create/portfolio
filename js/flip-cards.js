@@ -18,29 +18,39 @@ const syncFlipCardHeight = (card) => {
 };
 
 const syncAllFlipCardHeights = () => {
-	let globalMaxHeight = 0;
+	// Auf Desktop: alle Karten gleich hoch
+	const isDesktop = window.matchMedia('(min-width: 768px)').matches;
 
-	flipCards.forEach((card) => {
-		const front = card.querySelector('.flip-card-front');
-		const back = card.querySelector('.flip-card-back');
+	if (isDesktop) {
+		let globalMaxHeight = 0;
 
-		if (!front || !back) {
-			return;
-		}
+		flipCards.forEach((card) => {
+			const front = card.querySelector('.flip-card-front');
+			const back = card.querySelector('.flip-card-back');
 
-		const cardMaxHeight = Math.max(front.scrollHeight, back.scrollHeight);
-		globalMaxHeight = Math.max(globalMaxHeight, cardMaxHeight);
-	});
+			if (!front || !back) {
+				return;
+			}
 
-	flipCards.forEach((card) => {
-		const inner = card.querySelector('.flip-card-inner');
-		if (!inner || globalMaxHeight === 0) {
-			return;
-		}
+			const cardMaxHeight = Math.max(front.scrollHeight, back.scrollHeight);
+			globalMaxHeight = Math.max(globalMaxHeight, cardMaxHeight);
+		});
 
-		card.style.minHeight = `${globalMaxHeight}px`;
-		inner.style.minHeight = `${globalMaxHeight}px`;
-	});
+		flipCards.forEach((card) => {
+			const inner = card.querySelector('.flip-card-inner');
+			if (!inner || globalMaxHeight === 0) {
+				return;
+			}
+
+			card.style.minHeight = `${globalMaxHeight}px`;
+			inner.style.minHeight = `${globalMaxHeight}px`;
+		});
+	} else {
+		// Auf Mobile: jede Karte individuell
+		flipCards.forEach((card) => {
+			syncFlipCardHeight(card);
+		});
+	}
 };
 
 syncAllFlipCardHeights();
