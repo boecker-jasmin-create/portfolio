@@ -1,27 +1,36 @@
 .showcase-stage {
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	margin-left: 0;
-	overflow: hidden;
+	overflow: visible;
 }
 
 .showcase-panel {
-	position: absolute;
-	inset: 0;
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 2rem 1rem;
-	transform: translateX(100%);
+	min-height: 100vh;
+	width: 100%;
 	transition: transform 0.55s ease;
+
+	&.is-active {
+		display: flex;
+	}
+
+	&.is-prev,
+	&.is-next {
+		display: none;
+	}
 }
 
 .showcase-panel-content {
 	display: flex;
 	flex-direction: column;
 	width: min(1100px, 100%);
-	max-height: calc(100vh - 10.5rem);
+	max-height: none;
 }
 
 .showcase-panel-intro {
@@ -29,8 +38,9 @@
 }
 
 .showcase-panel-list {
-	overflow: hidden;
+	overflow: visible;
 	padding-right: 0.35rem;
+	flex: 1;
 }
 
 .showcase-item-card {
@@ -116,19 +126,4 @@
 	.showcase-detail-block iframe {
 		border: 0;
 	}
-}
-
-.showcase-panel.is-active {
-	transform: translateX(0);
-	z-index: 2;
-}
-
-.showcase-panel.is-prev {
-	transform: translateX(-100%);
-	z-index: 1;
-}
-
-.showcase-panel.is-next {
-	transform: translateX(100%);
-	z-index: 1;
 }
