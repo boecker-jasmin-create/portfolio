@@ -1,5 +1,5 @@
 // Bootstrap Theme Variables (Starter)
-$wave-peach: #adfceb;
+$wave-color: #adfceb;
 
 $primary: #0A332B;
 $secondary: #6c757d;
@@ -41,8 +41,6 @@ $bootstrap-icons-font-dir: "../node_modules/bootstrap-icons/font/fonts";
 @import "flip-cards";
 @import "showcase-submenu";
 @import "showcase-panels";
-@import "section-reveal";
-@import "contact-form";
 @import "background-animation";
 @import "typo";
 @import "main-navbar";
