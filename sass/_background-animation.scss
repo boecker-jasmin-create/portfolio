@@ -17,7 +17,7 @@ body::after {
 	height: 320vmax;
 	pointer-events: none;
 	transform: translate(-50%, -80%);
-	background: rgba($wave-peach, 1);
+	background: rgba($wave-color, 1);
 	border-radius: 44%;
 	animation: summer-wave-rotate 25s linear infinite;
 	z-index: 0;
@@ -28,7 +28,7 @@ html::before {
 	width: 340vmax;
 	height: 340vmax;
 	transform: translate(-50%, -78%);
-	background: rgba($wave-peach, 0.62);
+		background: rgba($wave-color, 0.62);
 	border-radius: 46%;
 	animation-name: summer-wave-rotate-third;
 	animation-duration: 20s;
@@ -39,7 +39,7 @@ body::after {
 	width: 300vmax;
 	height: 300vmax;
 	transform: translate(-50%, -76%);
-	background: rgba($wave-peach, 0.44);
+		background: rgba($wave-color, 0.44);
 	border-radius: 41%;
 	animation-name: summer-wave-rotate-after;
 	animation-duration: 15s;
