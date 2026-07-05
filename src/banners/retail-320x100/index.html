@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Retail 320x100</title>
+	<style>
+		html, body {
+			margin: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			font-family: Arial, sans-serif;
+		}
+		.banner {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			height: 100%;
+			padding: 0 12px;
+			box-sizing: border-box;
+			background: #408266;
+			color: #fff;
+			font-size: 14px;
+		}
+		.cta {
+			font-size: 13px;
+			opacity: 0.9;
+		}
+	</style>
+</head>
+<body>
+	<a class="banner" id="bannerLink" href="#" target="_blank" rel="noopener noreferrer" aria-label="Banner klicken">
+		<strong>Nur heute!</strong>
+		<span class="cta">Zum Shop →</span>
+	</a>
+	<script>
+		(function () {
+			const params = new URLSearchParams(window.location.search);
+			const clickTag = params.get('clickTag') || 'https://example.com';
+			document.getElementById('bannerLink').href = clickTag;
+		})();
+	</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Retail 728x90</title>
+	<style>
+		html, body {
+			margin: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			font-family: Arial, sans-serif;
+		}
+		.banner {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			height: 100%;
+			padding: 0 16px;
+			box-sizing: border-box;
+			background: linear-gradient(120deg, #408266, #ffebe7);
+			color: #fff;
+		}
+		.cta {
+			background: rgba(255,255,255,0.18);
+			border: 1px solid rgba(255,255,255,0.35);
+			padding: 6px 10px;
+			border-radius: 8px;
+			font-size: 12px;
+		}
+	</style>
+</head>
+<body>
+	<a class="banner" id="bannerLink" href="#" target="_blank" rel="noopener noreferrer" aria-label="Banner klicken">
+		<strong>SALE 40%</strong>
+		<span class="cta">Jetzt entdecken</span>
+	</a>
+	<script>
+		(function () {
+			const params = new URLSearchParams(window.location.search);
+			const clickTag = params.get('clickTag') || 'https://example.com';
+			document.getElementById('bannerLink').href = clickTag;
+		})();
+	</script>
+</body>
+</html>
