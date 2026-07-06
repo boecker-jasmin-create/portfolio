@@ -192,7 +192,7 @@ window.showcaseData = {
 	},
 	'showcase-html5-panel': {
 		title: 'HTML5 Banner',
-		intro: 'HTML5 Banner mit flüssigen animationen und guter Performence.',
+		intro: 'HTML5 Banner mit flüssigen animationen und guter Performence. Bitte Ad-Blocker abschalten.',
 		
 		items: [
 			{
