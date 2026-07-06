@@ -3,7 +3,7 @@ const mainNavbarList = document.querySelector('#mainNavbarList');
 const navLinks = mainNavbarList ? mainNavbarList.querySelectorAll('.nav-link[href^="#"]') : [];
 const showcaseSubmenuLinks = document.querySelectorAll('#showcaseSubmenu .nav-link[href^="#"]');
 const allPageLinks = document.querySelectorAll('a[href^="#"]');
-const allNavLinks = Array.from(navLinks).concat(Array.from(showcaseSubmenuLinks));
+const allNavLinks = Array.from(navLinks);
 const sections = Array.from(document.querySelectorAll('main > section[id]'));
 const navOffset = 120;
 
