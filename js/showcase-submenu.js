@@ -7,6 +7,12 @@ if (showcaseSection && showcaseSubmenu) {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					showcaseSubmenu.classList.remove('d-none');
+					const activePanel = document.querySelector('.showcase-panel.is-active');
+					if (activePanel) {
+						showcaseSubmenu.querySelectorAll('[data-showcase-panel]').forEach((tab) => {
+							tab.classList.toggle('active', tab.getAttribute('data-showcase-panel') === activePanel.id);
+						});
+					}
 				} else {
 					showcaseSubmenu.classList.add('d-none');
 				}
