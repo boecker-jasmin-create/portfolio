@@ -263,7 +263,7 @@ const renderShowcasePanels = () => {
 				cardButton.appendChild(image);
 			}
 
-			const body = createElement('div', 'card-body');
+			const body = createElement('div', 'card-body border-top');
 			body.appendChild(createElement('h3', 'h5 card-title', item.title || 'Projekt'));
 			body.appendChild(createElement('p', 'card-text mb-0', item.teaser || 'Hier klicken für mehr Details.'));
 			cardButton.appendChild(body);
