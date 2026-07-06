@@ -1,87 +1,4 @@
-const createPreviewSvg = (title, accent = '#408266') => {
-	const safeTitle = String(title || '').replace(/[&<>"']/g, '');
-	const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='675' viewBox='0 0 1200 675'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='${accent}'/><stop offset='100%' stop-color='#ffebe7'/></linearGradient></defs><rect width='1200' height='675' fill='url(#g)'/><rect x='36' y='36' width='1128' height='603' rx='24' fill='rgba(255,255,255,.22)'/><text x='60' y='110' fill='#ffffff' font-size='52' font-family='Arial, sans-serif' font-weight='700'>${safeTitle}</text><text x='60' y='160' fill='#ffffff' font-size='28' font-family='Arial, sans-serif'>Vorschau</text></svg>`;
-	return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
-};
-
 window.showcaseData = {
-	'showcase-html5-panel': {
-		title: 'HTML5 Banner',
-		intro: 'HTML5 Banner mit flüssigen animationen und guter Performence.',
-		
-		items: [
-			{
-				title: 'Politik trifft Praxis – Stream',
-				thumbnail: 'image/thumbnails/ptp.webp',
-				detailBlocks: [
-					{
-						type: 'iframe',
-						title: 'Billboard 970x250',
-						height: 250,
-                        width: 970,
-						src: 'showcase/ptp-251202/billboard/index.html'
-					},
-					{
-						type: 'iframe',
-						title: 'Medium Rectangle 300x250',
-						height: 250,
-                        width: 300,
-						src: 'showcase/ptp-251202/medrec/index.html'
-					},
-					{
-						type: 'iframe',
-						title: 'Halfpage 300x600',
-						height: 600,
-                        width: 300,
-						src: 'showcase/ptp-251202/halfpage/index.html'
-					},
-					{
-						type: 'iframe',
-						title: 'Maxi Rectangle 620x465',
-						height: 465,
-                        width: 620,
-						src: 'showcase/ptp-251202/maxrec/index.html'
-					},
-					
-				]
-			},
-			{
-				title: 'Wochenblatt – Upgrade',
-				thumbnail: 'image/thumbnails/lwb.webp',
-				detailBlocks: [
-					{
-						type: 'iframe',
-						title: 'Billboard 970x250',
-						height: 250,
-                        width: 970,
-						src: 'showcase/wocheblatt-upgrade/billboard/index.html'
-					},
-					{
-						type: 'iframe',
-						title: 'Medium Rectangle 300x250',
-						height: 250,
-                        width: 300,
-						src: 'showcase/wocheblatt-upgrade/med-rec/index.html'
-					},
-					{
-						type: 'iframe',
-						title: 'Halfpage 300x600',
-						height: 600,
-                        width: 300,
-						src: 'showcase/wocheblatt-upgrade/halfpage/index.html'
-					},
-					{
-						type: 'iframe',
-						title: 'Leaderboard 728x90',
-						height: 90,
-                        width: 728,
-						src: 'showcase/wocheblatt-upgrade/leaderboard/index.html'
-					},
-					
-				]
-			},
-		]
-	},
 	'showcase-social-media-panel': {
 		title: 'Social Media',
 		intro: 'Ads und Visuals für Feed, Story und Reels in kanalübergreifenden Kampagnen.',
@@ -271,6 +188,83 @@ window.showcaseData = {
 						}
 					]
 				}
+		]
+	},
+	'showcase-html5-panel': {
+		title: 'HTML5 Banner',
+		intro: 'HTML5 Banner mit flüssigen animationen und guter Performence.',
+		
+		items: [
+			{
+				title: 'Politik trifft Praxis – Stream',
+				thumbnail: 'image/thumbnails/ptp.webp',
+				detailBlocks: [
+					{
+						type: 'iframe',
+						title: 'Billboard 970x250',
+						height: 250,
+                        width: 970,
+						src: 'showcase/ptp-251202/billboard/index.html'
+					},
+					{
+						type: 'iframe',
+						title: 'Medium Rectangle 300x250',
+						height: 250,
+                        width: 300,
+						src: 'showcase/ptp-251202/medrec/index.html'
+					},
+					{
+						type: 'iframe',
+						title: 'Halfpage 300x600',
+						height: 600,
+                        width: 300,
+						src: 'showcase/ptp-251202/halfpage/index.html'
+					},
+					{
+						type: 'iframe',
+						title: 'Maxi Rectangle 620x465',
+						height: 465,
+                        width: 620,
+						src: 'showcase/ptp-251202/maxrec/index.html'
+					},
+					
+				]
+			},
+			{
+				title: 'Wochenblatt – Upgrade',
+				thumbnail: 'image/thumbnails/lwb.webp',
+				detailBlocks: [
+					{
+						type: 'iframe',
+						title: 'Billboard 970x250',
+						height: 250,
+                        width: 970,
+						src: 'showcase/wocheblatt-upgrade/billboard/index.html'
+					},
+					{
+						type: 'iframe',
+						title: 'Medium Rectangle 300x250',
+						height: 250,
+                        width: 300,
+						src: 'showcase/wocheblatt-upgrade/med-rec/index.html'
+					},
+					{
+						type: 'iframe',
+						title: 'Halfpage 300x600',
+						height: 600,
+                        width: 300,
+						src: 'showcase/wocheblatt-upgrade/halfpage/index.html'
+					},
+					{
+						type: 'iframe',
+						title: 'Leaderboard 728x90',
+						height: 90,
+                        width: 728,
+						src: 'showcase/wocheblatt-upgrade/leaderboard/index.html'
+					},
+					
+				]
+			},
 		]
 	}
 };
