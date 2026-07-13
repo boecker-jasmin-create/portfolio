@@ -164,22 +164,22 @@ window.showcaseData = {
 					{
 						type: 'image',
 						columns: 3,
-						src: 'showcase/dlg_whatapp/_Gewinnuebersicht.jpg'
+						src: 'showcase/dlg_whatapp/Gewinnuebersicht.jpg'
 					},			
 					{
 						type: 'image',
 						columns: 3,
-						src: 'showcase/dlg_whatapp/_Motiv-Apptext.jpg'
+						src: 'showcase/dlg_whatapp/Motiv-Apptext.jpg'
 					},	
 					{
 						type: 'image',
 						columns: 3,
-						src: 'showcase/dlg_whatapp/_Windmesser.jpg'
+						src: 'showcase/dlg_whatapp/Windmesser.jpg'
 					},	
 					{
 						type: 'image',
 						columns: 3,
-						src: 'showcase/dlg_whatapp/_Windmesser-Apptext.jpg'
+						src: 'showcase/dlg_whatapp/Windmesser-Apptext.jpg'
 					},	
 				]
 			}
