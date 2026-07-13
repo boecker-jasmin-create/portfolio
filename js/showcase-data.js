@@ -266,31 +266,94 @@ window.showcaseData = {
 				detailBlocks: [
 					{
 						type: 'iframe',
-						title: 'Billboard 970x250',
+						title: 'Billboard 970x250px',
 						height: 250,
                         width: 970,
 						src: 'showcase/ptp-251202/billboard/index.html'
 					},
 					{
 						type: 'iframe',
-						title: 'Medium Rectangle 300x250',
+						title: 'Medium Rectangle 300x250px',
 						height: 250,
                         width: 300,
 						src: 'showcase/ptp-251202/medrec/index.html'
 					},
 					{
 						type: 'iframe',
-						title: 'Halfpage 300x600',
+						title: 'Halfpage 300x600px',
 						height: 600,
                         width: 300,
 						src: 'showcase/ptp-251202/halfpage/index.html'
 					},
 					{
 						type: 'iframe',
-						title: 'Maxi Rectangle 620x465',
+						title: 'Maxi Rectangle 620x465px',
 						height: 465,
                         width: 620,
 						src: 'showcase/ptp-251202/maxrec/index.html'
+					},
+					
+				]
+			},
+			{
+				title: 'profi – Newsletteranmeldung',
+				thumbnail: 'image/thumbnails/profi.webp',
+				detailBlocks: [
+					{
+						type: 'iframe',
+						title: 'Billboard 970x250px',
+						height: 250,
+                        width: 970,
+						src: 'showcase/profi_newsletterformular_bannerkit/billboard/index.html'
+					},
+					{
+						type: 'iframe',
+						title: 'Medium Rectangle 300x250px',
+						height: 250,
+                        width: 300,
+						src: 'showcase/profi_newsletterformular_bannerkit/medrec/index.html'
+					},
+					{
+						type: 'iframe',
+						title: 'Maxi Rectangle 620x465px',
+						height: 465,
+                        width: 620,
+						src: 'showcase/profi_newsletterformular_bannerkit/maxrec/index.html'
+					},
+					
+				]
+			},
+			{
+				title: 'DLG Mitteilungen - Online Zugang aktivieren',
+				thumbnail: 'image/thumbnails/dlg.webp',
+				detailBlocks: [
+					{
+						type: 'iframe',
+						title: 'Billboard 970x250px',
+						height: 250,
+                        width: 970,
+						src: 'showcase/dlg_onlinezugang/billboard/index.html'
+					},
+					{
+						type: 'iframe',
+						title: 'Medium Rectangle 300x250px',
+						height: 250,
+                        width: 300,
+						src: 'showcase/dlg_onlinezugang/medrec/index.html'
+					},
+					{
+						type: 'iframe',
+						title: 'Halfpage 300x600px',
+						height: 600,
+                        width: 300,
+						src: 'showcase/dlg_onlinezugang/halfpage/index.html'
+					},
+					{
+						type: 'iframe',
+						title: 'Leaderboard 728x90px',
+						height: 90,
+                        width: 728,
+						src: 'showcase/dlg_onlinezugang/leaderboard/index.html'
 					},
 					
 				]
@@ -301,28 +364,28 @@ window.showcaseData = {
 				detailBlocks: [
 					{
 						type: 'iframe',
-						title: 'Billboard 970x250',
+						title: 'Billboard 970x250px',
 						height: 250,
                         width: 970,
 						src: 'showcase/wocheblatt-upgrade/billboard/index.html'
 					},
 					{
 						type: 'iframe',
-						title: 'Medium Rectangle 300x250',
+						title: 'Medium Rectangle 300x250px',
 						height: 250,
                         width: 300,
 						src: 'showcase/wocheblatt-upgrade/med-rec/index.html'
 					},
 					{
 						type: 'iframe',
-						title: 'Halfpage 300x600',
+						title: 'Halfpage 300x600px',
 						height: 600,
                         width: 300,
 						src: 'showcase/wocheblatt-upgrade/halfpage/index.html'
 					},
 					{
 						type: 'iframe',
-						title: 'Leaderboard 728x90',
+						title: 'Leaderboard 728x90px',
 						height: 90,
                         width: 728,
 						src: 'showcase/wocheblatt-upgrade/leaderboard/index.html'
