@@ -155,6 +155,33 @@ window.showcaseData = {
 					},
 
 				]
+			},
+			{
+				title: 'DLG Mitteilungen - WhatsApp Story Ads',
+				teaser: 'Erste Ausarbeitung meiner Ideen für die Kampagne',
+				thumbnail: 'image/thumbnails/dlg.webp',
+				detailBlocks: [
+					{
+						type: 'image',
+						columns: 3,
+						src: 'showcase/dlg_whatapp/_Gewinnuebersicht.jpg'
+					},			
+					{
+						type: 'image',
+						columns: 3,
+						src: 'showcase/dlg_whatapp/_Motiv-Apptext.jpg'
+					},	
+					{
+						type: 'image',
+						columns: 3,
+						src: 'showcase/dlg_whatapp/_Windmesser.jpg'
+					},	
+					{
+						type: 'image',
+						columns: 3,
+						src: 'showcase/dlg_whatapp/_Windmesser-Apptext.jpg'
+					},	
+				]
 			}
 		]
 	},
