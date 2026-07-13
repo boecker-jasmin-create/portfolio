@@ -117,6 +117,44 @@ window.showcaseData = {
 					},
 
 				]
+			},
+			{
+				title: 'Living at Home – Social Media Ads',
+				teaser: 'Ads in verschiedenen Formaten für Instagram, Facebook und Google PMax.',
+				thumbnail: 'image/thumbnails/lah.webp',
+				detailBlocks: [
+					{
+						type: 'video',
+						columns: 3,
+						src: 'showcase/lah-misspompadour/story2.mp4'
+					},
+					{
+						type: 'video',
+						columns: 3,
+						src: 'showcase/lah-misspompadour/reel2.mp4'
+					},
+					{
+						type: 'video',
+						columns: 3,
+						src: 'showcase/lah-misspompadour/feed2.mp4'
+					},
+					{
+						type: 'image',
+						columns: 3,
+						src: 'showcase/lah-misspompadour/story1.jpg'
+					},
+					{
+						type: 'image',
+						columns: 3,
+						src: 'showcase/lah-misspompadour/Reel1.jpg'
+					},
+					{
+						type: 'image',
+						columns: 3,
+						src: 'showcase/lah-misspompadour/Feed1.jpg'
+					},
+
+				]
 			}
 		]
 	},
