@@ -242,7 +242,8 @@ const renderShowcasePanels = () => {
 		panel.innerHTML = '';
 
 		const content = createElement('div', 'container showcase-panel-content');
-		content.appendChild(createElement('h2', 'mb-2 font-decorative', panelData.title || 'Showcase'));
+		content.appendChild(createElement('h2', 'font-decorative fs-1', 'Showcase'));
+		content.appendChild(createElement('h2', 'mb-2', panelData.title || 'Showcase'));
 		if (panelData.intro) {
 			content.appendChild(createElement('p', 'showcase-panel-intro mb-3', panelData.intro));
 		}
