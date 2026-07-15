@@ -187,7 +187,7 @@ window.showcaseData = {
 	},
 	'showcase-js-animationen-panel': {
 		title: 'Webseiten & Landingpages',
-		intro: 'Technische Umsetzung mit HTML, CSS und JavaScript oder auf Basis von WordPress bzw. Adobe Commerce.',
+		intro: 'Technische Umsetzung mit HTML, CSS und JavaScript oder auf Basis von WordPress, TYPO3 bzw. Adobe Commerce.',
 		items: [
 				{
 					title: 'Landwärts - Homepage',
@@ -218,6 +218,22 @@ window.showcaseData = {
 							type: 'link',
 							text: 'Landingpage besuchen',
 							href: 'https://shop.matsch-magazin.de/matsch-schulstart-2026-social'
+						}
+					]
+				},
+				{
+					title: 'DLG - Frühjahrkampagne Landingpage',
+					thumbnail: 'image/thumbnails/dlg.webp',
+					detailBlocks: [
+						{
+							type: 'image',
+							title: 'TYPO3 Landingpage',
+							src: 'image/Webseiten/dlg-landingpage.webp'
+						},
+						{
+							type: 'link',
+							text: 'Landingpage besuchen',
+							href: 'https://www.dlg-mitteilungen.de/fruehjahr-2026-social'
 						}
 					]
 				},
