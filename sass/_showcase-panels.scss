@@ -95,6 +95,14 @@
 	.showcase-detail-cell--compact {
 		grid-column: span 4;
 	}
+	
+	.showcase-detail-cell--half {
+		grid-column: span 6;
+
+		@media (max-width: 575.98px) {
+			grid-column: span 12;
+		}
+	}
 
 	.showcase-detail-cell--third {
 		grid-column: span 4;
