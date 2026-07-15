@@ -67,6 +67,10 @@ const getBlockDimensions = (block) => {
 };
 
 const getDetailCellClassName = (block) => {
+	if (block.columns === 2) {
+		return 'showcase-detail-cell--half';
+	}
+	
 	if (block.columns === 3) {
 		return 'showcase-detail-cell--third';
 	}
