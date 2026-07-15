@@ -163,22 +163,22 @@ window.showcaseData = {
 				detailBlocks: [
 					{
 						type: 'image',
-						columns: 3,
+						columns: 2,
 						src: 'showcase/dlg_whatapp/Gewinnuebersicht.jpg'
 					},			
 					{
 						type: 'image',
-						columns: 3,
+						columns: 2,
 						src: 'showcase/dlg_whatapp/Motiv-Apptext.jpg'
 					},	
 					{
 						type: 'image',
-						columns: 3,
+						columns: 2,
 						src: 'showcase/dlg_whatapp/Windmesser.jpg'
 					},	
 					{
 						type: 'image',
-						columns: 3,
+						columns: 2,
 						src: 'showcase/dlg_whatapp/Windmesser-Apptext.jpg'
 					},	
 				]
@@ -222,7 +222,7 @@ window.showcaseData = {
 					]
 				},
 				{
-					title: 'DLG - Frühjahrkampagne Landingpage',
+					title: 'DLG Mitteilungen - Frühjahrkampagne Landingpage',
 					thumbnail: 'image/thumbnails/dlg.webp',
 					detailBlocks: [
 						{
