@@ -1,6 +1,6 @@
 window.showcaseData = {
 	'showcase-social-media-panel': {
-		title: 'Showcase - Social Media',
+		title: 'Social Media',
 		intro: 'Ads und Visuals für Feed, Story und Reels in kanalübergreifenden Kampagnen.',
 		items: [
 			{
@@ -186,7 +186,7 @@ window.showcaseData = {
 		]
 	},
 	'showcase-js-animationen-panel': {
-		title: 'Showcase - Webseiten & Landingpages',
+		title: 'Webseiten & Landingpages',
 		intro: 'Technische Umsetzung mit HTML, CSS und JavaScript oder auf Basis von WordPress, TYPO3 bzw. Adobe Commerce.',
 		items: [
 				{
@@ -271,7 +271,7 @@ window.showcaseData = {
 				}
 		]
 	},
-	'Showcase - showcase-html5-panel': {
+	'showcase-html5-panel': {
 		title: 'HTML5 Banner',
 		intro: 'HTML5 Banner mit flüssigen animationen und guter Performence. Bitte Ad-Blocker abschalten.',
 		
